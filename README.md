@@ -1,24 +1,24 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Portfolio:  mobile version 
-> building the first 2 sections of my personal porfolio for mobile devices.
-that was done by choosing [This Template](https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A988) from [figma website](https://www.figma.com/files/recent?fuid=1117928134273947127) and exporting the necessary images from it and building my portifolio using html and css 
+# creative engineers website:  mobile and desktop version 
+> building the first 2 pages (Home and About pages) of a fantasy company that i dreamed to establish before  for mobile and Dektop devices.
+that was done by choosing [This Template](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015) that is actually designed by this creative graphic desginer Guy  [Cindy Shin in Behance](https://www.behance.net/adagio07).
 
 
 ## Built With
 
-- html , css
+- html , css and javascript
 
 
 ## Live Demo 
 
-[Live Demo Link](https://mohamed20163858.github.io/my-portfolio/)
+[Live Demo Link](https://mohamed20163858.github.io/create_engineers_website/)
 
 
 ## Getting Started
 You can download the page by clicking in the code green button and select Download ZIP or if you are a developer 
-you can get the https link or ssh link just copy it and use your favourite command line git interface and write this `git clone https://github.com/mohamed20163858/my-portfolio.git` if you use https or write 
-`git clone git@github.com:mohamed20163858/my-portfolio.git` if you use ssh and then after installition you can run the application by just clicking on index.html inside my-portfolio directory 
+you can get the https link or ssh link just copy it and use your favourite command line git interface and write this `git clone https://github.com/mohamed20163858/create_engineers_website.git` if you use https or write 
+`git@github.com:mohamed20163858/create_engineers_website.git` if you use ssh and then after installition you can run the application by just clicking on index.html inside my-portfolio directory 
 
 
 ## Authors

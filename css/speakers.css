@@ -12,7 +12,6 @@
 .speaker {
   margin-top: 50px;
   display: flex;
-  align-items: center;
 }
 
 .speaker .info {
