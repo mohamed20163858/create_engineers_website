@@ -30,6 +30,10 @@ you can get the https link or ssh link just copy it and use your favourite comma
 - LinkedIn: [mohamed-mohsen-685a4995](https://www.linkedin.com/in/mohamed-mohsen-685a4995/)
 
 
+## Acknowledgements
+
+- all credits goes to this creative graphic desginer Guy  [Cindy Shin in Behance](https://www.behance.net/adagio07) the [ author of original design ](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015).
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
