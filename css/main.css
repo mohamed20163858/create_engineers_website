@@ -1,0 +1,642 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'COCOGOOSE', sans-serif;
+  letter-spacing: 0.038rem;
+}
+
+:root {
+  --black: #272a31;
+  --orange: #ec5242;
+  --gray: #d3d3d3;
+}
+
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.landing-page,
+.contact-us {
+  height: auto;
+  width: 100%;
+  background-color: rgba(211, 211, 211, 0.4);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.landing-page p,
+.contact-us p {
+  margin-top: 20px;
+}
+
+.landing-page::after,
+.contact-us::after {
+  content: '';
+  background-image: url(../images/homeBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.landing-page img,
+.contact-us img {
+  width: 4%;
+}
+
+.logo-info p,
+.past-job-fair > p {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.logo-info p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.past-job-fair > p {
+  margin-top: 5%;
+}
+
+.transparent-text p {
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin-top: 3%;
+}
+
+.landing-page p:first-of-type,
+.contact-us p:first-of-type {
+  color: var(--orange, orange);
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+}
+
+.landing-page h1 {
+  color: var(--orange, orange);
+  font-size: 40px;
+  font-weight: 900;
+  background-image: url(../images/headerBackground.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.landing-page p:nth-of-type(2) {
+  border: solid 3px white;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.landing-page p:nth-of-type(3) {
+  color: var(--black);
+  font-size: 23px;
+  font-weight: 900;
+}
+
+.landing-page p:nth-of-type(4) {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.main-program {
+  background-image: url(../images/programBackground.jpg);
+  background-size: cover;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-program a {
+  display: none;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background-color: rgba(211, 211, 211, 0.1);
+  width: 98%;
+  padding: 15px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.card:hover {
+  border: 6px solid white;
+  border-radius: 3px;
+}
+
+.card img {
+  margin-left: 3%;
+}
+
+.card p:first-of-type {
+  color: var(--orange, orange);
+  margin-left: 3%;
+  margin-right: 3%;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  font-size: 18px;
+  padding-left: 5%;
+  width: 36%;
+}
+
+.card p:last-of-type {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  width: 30%;
+}
+
+.main-program button {
+  background-color: var(--orange, orange);
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.white h2 {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.black h2 {
+  color: var(--black, black);
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title hr {
+  background-color: var(--orange, orange);
+  width: 30px;
+  border: none;
+  height: 2px;
+  margin-top: 15px;
+}
+
+.contact-us {
+  align-items: center;
+}
+
+.contact-us img {
+  align-self: flex-start;
+}
+
+.contact-us p:first-of-type,
+.contact-us h2 {
+  align-self: center;
+}
+
+.contact-us h2 {
+  color: var(--orange, orange);
+  font-size: 29px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.contact-us p:nth-of-type(2) {
+  background-color: white;
+  padding: 20px;
+  border: 3px var(--gray, gray) solid;
+  border-radius: 3px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-us p:nth-of-type(3) {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  width: 80%;
+}
+
+.contact-us a {
+  color: var(--black);
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
+}
+
+.logo-info,
+.past-job-fair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  padding: 20px;
+}
+
+.logo-info h2,
+.past-job-fair h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 35px;
+}
+
+.logo-info div:last-of-type {
+  width: 80%;
+  border: 3px var(--gray, gray) solid;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners img {
+  width: 20vw;
+  margin-right: 10%;
+}
+
+.menu-decoration img {
+  float: right;
+  clear: both;
+  margin-top: 34px;
+  margin-bottom: 46px;
+  margin-right: 38px;
+}
+
+.logo-info div img {
+  width: 50vw;
+}
+
+.background-image-1 {
+  background-image: url(../images/jobfairDamnhour.jpeg);
+  background-size: cover;
+  width: 95vw;
+  height: 60vw;
+  opacity: 0.7;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.background-image-2 {
+  background-image: url(../images/jobfairAlex.jpg);
+  background-size: cover;
+  width: 95vw;
+  height: 60vw;
+  opacity: 0.7;
+}
+
+.transparent-text {
+  background-color: rgba(236, 82, 66, 0.7);
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.transparent-text h3 {
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+}
+
+.past-job-fair {
+  height: auto;
+}
+
+.partners {
+  background-color: var(--black, black);
+  padding: 5%;
+  height: auto;
+}
+
+.home .partners {
+  display: none;
+}
+
+.about .partners {
+  display: block;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header,
+nav {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.menu-decoration {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-decoration li {
+  float: left;
+  clear: both;
+  margin-left: 28px;
+  margin-bottom: 40px;
+}
+
+.menu-decoration li a {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: var(--black, black);
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  header {
+    background-color: var(--black, black);
+    padding: 10px;
+    display: block;
+  }
+
+  header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  header ul li {
+    margin-left: 3%;
+  }
+
+  nav p {
+    border: 10px solid var(--orange, orange);
+    padding: 10px;
+  }
+
+  nav p a {
+    color: var(--orange, orange);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav img {
+    width: 7vw;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    margin-right: 7%;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: var(--black, black);
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .landing-page {
+    height: auto;
+    justify-content: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+
+  .landing-page p,
+  .contact-us p {
+    margin-top: 100px;
+  }
+
+  .contact-us a {
+    margin-top: 100px;
+    font-size: 32px;
+  }
+
+  .landing-page img {
+    display: none;
+  }
+
+  .logo-info p {
+    font-size: 28px;
+  }
+
+  .past-job-fair > p {
+    font-size: 28px;
+  }
+
+  .transparent-text p {
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: center;
+  }
+
+  .landing-page p:first-of-type,
+  .contact-us p:first-of-type {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .landing-page h1 {
+    font-size: 90px;
+    font-weight: 900;
+  }
+
+  .landing-page p:nth-of-type(2) {
+    border: solid 6px white;
+    padding: 40px;
+    border-radius: 10px;
+    font-size: 28px;
+    font-weight: 500;
+  }
+
+  .landing-page p:nth-of-type(3) {
+    color: var(--black);
+    font-size: 46px;
+  }
+
+  .landing-page p:nth-of-type(4) {
+    color: var(--black);
+    font-size: 32px;
+  }
+
+  .white h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .black h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .title hr {
+    width: 60px;
+    height: 4px;
+    margin-top: 15px;
+  }
+
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+    width: 100%;
+  }
+
+  .main-program {
+    height: auto;
+    justify-content: space-around;
+  }
+
+  .main-program > div:first-of-type {
+    margin-top: 2vw;
+  }
+
+  .main-program button {
+    display: none;
+  }
+
+  .main-program .card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 315px;
+    height: 370px;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+
+  .main-program a {
+    display: block;
+    color: white;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .card p:first-of-type {
+    width: 95%;
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .card p:last-of-type {
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .contact-us img {
+    display: none;
+  }
+
+  .contact-us h2 {
+    font-size: 58px;
+  }
+
+  .contact-us p:nth-of-type(2) {
+    font-size: 32px;
+    padding: 40px;
+  }
+
+  .contact-us p:nth-of-type(3) {
+    font-size: 32px;
+  }
+
+  .transparent-text h3 {
+    font-size: 50px;
+  }
+
+  .home .partners {
+    display: block;
+  }
+
+  .about .partners {
+    display: none;
+  }
+
+  .job-fair-images {
+    display: flex;
+    align-items: center;
+  }
+
+  .background-image-1,
+  .background-image-2 {
+    width: 45vw;
+    height: 40vw;
+  }
+
+  .background-image-1 {
+    margin-right: 30px;
+  }
+}

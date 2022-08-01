@@ -1,0 +1,44 @@
+footer p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+footer img:first-of-type {
+  display: none;
+}
+
+footer img:last-of-type {
+  width: 35vw;
+}
+
+footer {
+  display: flex;
+  background-color: var(--black, black);
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 20px;
+    background-color: white;
+  }
+
+  footer img:first-of-type {
+    display: block;
+    width: 15%;
+  }
+
+  footer img:last-of-type {
+    display: none;
+  }
+
+  footer p {
+    color: var(--black, black);
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
